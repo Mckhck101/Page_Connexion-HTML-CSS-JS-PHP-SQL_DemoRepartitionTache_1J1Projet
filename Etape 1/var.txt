@@ -1,0 +1,3 @@
+(2) username = utilisateur
+(2) password = mot de passe
+(name) submit = button
