@@ -1,0 +1,29 @@
+-----------------
+À la place de : 
+-----------------
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+require("Connexion.php");
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+----------------
+Mettez : 
+----------------
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+require("Connexion.php");
+
+$dbname = "Nom de la base de données";
+
+// Sélectionner la base de données
+$conn->select_db($dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Permet à l'utilisateur du code de séléctionner sa BD !
